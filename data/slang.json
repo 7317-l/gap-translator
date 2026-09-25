@@ -1,0 +1,130 @@
+{
+  "note": "00后网络用语词典，用于AI理解和解释给长辈听",
+  "slang": [
+    {
+      "term": "yyds",
+      "meaning": "永远的神，表示极度崇拜或喜爱",
+      "origin": "电竞圈，形容偶像",
+      "explain_to_parents": "就是'特别好、我太喜欢了'的意思，不是什么奇怪的词"
+    },
+    {
+      "term": "xswl",
+      "meaning": "笑死我了",
+      "explain_to_parents": "就是'太好笑了'的缩写"
+    },
+    {
+      "term": "emo",
+      "meaning": "情绪低落、伤感",
+      "origin": "音乐流派emocore",
+      "explain_to_parents": "就是'心情不好、有点丧'的意思，不是病"
+    },
+    {
+      "term": "摆烂",
+      "meaning": "不挣扎了，任由事情往坏的方向发展",
+      "explain_to_parents": "不是真的放弃，更像是'太累了先这样吧'，跟你们说的'躺平歇会儿'类似"
+    },
+    {
+      "term": "躺平",
+      "meaning": "降低欲望，不参与过度竞争",
+      "explain_to_parents": "不是不干活，是不想为了买房结婚把自己累死"
+    },
+    {
+      "term": "内卷",
+      "meaning": "过度竞争，大家都更努力但整体收益没增加",
+      "explain_to_parents": "就像看电影，第一排站起来了，后面的不得不站着，最后大家都累但谁也没看得更清楚"
+    },
+    {
+      "term": "破防",
+      "meaning": "心理防线被击穿，被触动",
+      "origin": "游戏术语",
+      "explain_to_parents": "就是'突然被戳中了，绷不住了'"
+    },
+    {
+      "term": "绝绝子",
+      "meaning": "太好了或太差了，看语境",
+      "explain_to_parents": "就是'太绝了'，夸人或者吐槽都能用"
+    },
+    {
+      "term": "红温了",
+      "meaning": "崩溃了、心态炸了",
+      "origin": "游戏里血条变红",
+      "explain_to_parents": "就是'气到不行、心态崩了'"
+    },
+    {
+      "term": "老六",
+      "meaning": "耍阴招、不按常理出牌的人",
+      "origin": "游戏里蹲在角落阴人的玩家",
+      "explain_to_parents": "就是'玩阴的、偷袭'的意思"
+    },
+    {
+      "term": "摸鱼",
+      "meaning": "上班/上学偷懒",
+      "explain_to_parents": "就是'偷偷懒、划划水'"
+    },
+    {
+      "term": "打螺丝",
+      "meaning": "做普通打工的工作",
+      "explain_to_parents": "就是'上班、打工'的自嘲说法"
+    },
+    {
+      "term": "磕到了",
+      "meaning": "看到甜蜜的互动很满足",
+      "explain_to_parents": "就是'看到两个人很配，很开心'"
+    },
+    {
+      "term": "社恐",
+      "meaning": "社交恐惧，这里多指不想无意义社交",
+      "explain_to_parents": "不是病，就是'不想去应酬、不想跟不熟的人尬聊'"
+    },
+    {
+      "term": "扩列",
+      "meaning": "加好友",
+      "explain_to_parents": "就是'加个联系方式'"
+    },
+    {
+      "term": "养火",
+      "meaning": "多互动维持关系",
+      "explain_to_parents": "就是'多联系维持感情'"
+    },
+    {
+      "term": "CDX",
+      "meaning": "处对象",
+      "explain_to_parents": "就是'谈恋爱'的拼音缩写"
+    },
+    {
+      "term": "语C",
+      "meaning": "语言cosplay，文字角色扮演",
+      "explain_to_parents": "就是'用文字玩角色扮演游戏'"
+    },
+    {
+      "term": "全职儿女",
+      "meaning": "暂时在家靠父母养，不出去工作",
+      "explain_to_parents": "就是'暂时在家待着，还没找到合适的工作'"
+    },
+    {
+      "term": "内核稳定",
+      "meaning": "情绪不被外界影响",
+      "explain_to_parents": "就是'心态好、不轻易被影响'"
+    },
+    {
+      "term": "钝感力",
+      "meaning": "不敏感，对批评不那么在意",
+      "explain_to_parents": "就是'脸皮厚一点，别太玻璃心'"
+    },
+    {
+      "term": "吃瓜",
+      "meaning": "围观八卦",
+      "explain_to_parents": "就是'看热闹'"
+    },
+    {
+      "term": "泼天富贵",
+      "meaning": "突如其来的好运",
+      "explain_to_parents": "就是'突然走大运'"
+    },
+    {
+      "term": "财富自由",
+      "meaning": "不用为钱工作",
+      "explain_to_parents": "就是'钱够花了，不用上班'"
+    }
+  ]
+}

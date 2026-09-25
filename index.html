@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gap Translator - 代沟翻译机</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #f5f5f7; color: #333; min-height: 100vh; }
+.container { max-width: 600px; margin: 0 auto; padding: 20px; }
+h1 { font-size: 24px; text-align: center; margin: 20px 0; }
+.slogan { text-align: center; color: #888; font-size: 13px; margin-bottom: 24px; font-style: italic; }
+select, textarea, input { width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 8px; font-size: 14px; margin: 6px 0; }
+textarea { min-height: 80px; resize: vertical; }
+button { background: #ff6b6b; color: white; border: none; padding: 12px 24px; border-radius: 8px; font-size: 15px; cursor: pointer; width: 100%; margin-top: 10px; }
+button:hover { background: #ee5a5a; }
+.controls { background: white; padding: 16px; border-radius: 12px; margin-bottom: 16px; }
+.result { background: white; padding: 16px; border-radius: 12px; margin-top: 16px; display: none; }
+.original { background: #f5f5f5; padding: 10px; border-radius: 8px; color: #888; font-size: 13px; margin-bottom: 12px; }
+.translated { line-height: 1.7; white-space: pre-wrap; }
+.arrow { text-align: center; color: #ff6b6b; margin: 8px 0; }
+.tabs { display: flex; gap: 8px; margin-bottom: 16px; }
+.tab { flex: 1; padding: 10px; text-align: center; background: white; border-radius: 8px; cursor: pointer; font-size: 14px; }
+.tab.active { background: #ff6b6b; color: white; }
+.api-key { font-size: 12px; color: #999; margin-top: 16px; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>🔄 Gap Translator</h1>
+  <p class="slogan">不站队——只是两套操作系统不兼容，我们负责翻译。</p>
+
+  <div class="tabs">
+    <div class="tab active" onclick="switchMode('translate')">帮我翻译给他们听</div>
+    <div class="tab" onclick="switchMode('understand')">我想理解他们</div>
+  </div>
+
+  <div class="controls">
+    <label>我是：</label>
+    <select id="fromGen">
+      <option value="00后">00后</option>
+      <option value="90后">90后</option>
+      <option value="80后">80后</option>
+      <option value="70后">70后</option>
+      <option value="60后">60后</option>
+    </select>
+    <label>我想聊：</label>
+    <select id="toGen">
+      <option value="60后">60后（父母辈）</option>
+      <option value="70后">70后（父母辈）</option>
+      <option value="80后">80后</option>
+      <option value="90后">90后</option>
+      <option value="00后">00后</option>
+    </select>
+    <textarea id="input" placeholder="输入你想说的话..."></textarea>
+    <button onclick="send()">翻译</button>
+  </div>
+
+  <div class="result" id="result">
+    <div class="original" id="originalBox"></div>
+    <div class="arrow">↓ AI 帮你翻译成对方能接受的版本 ↓</div>
+    <div class="translated" id="translatedBox"></div>
+  </div>
+
+  <p class="api-key">在代码里填入你的 OpenAI API Key 即可使用。详见 README。</p>
+</div>
+
+<script>
+let mode = 'translate';
+function switchMode(m) {
+  mode = m;
+  document.querySelectorAll('.tab').forEach((t,i) => {
+    t.classList.toggle('active', (i===0) === (m==='translate'));
+  });
+}
+
+async function send() {
+  const input = document.getElementById('input').value.trim();
+  if (!input) return;
+  const from = document.getElementById('fromGen').value;
+  const to = document.getElementById('toGen').value;
+
+  // 这里替换成你的 API 调用
+  // 为了demo，先显示模拟结果
+  document.getElementById('result').style.display = 'block';
+  document.getElementById('originalBox').textContent = '你本来想说：' + input;
+  document.getElementById('translatedBox').textContent =
+    '💡 这里会显示AI翻译后的版本。\n\n请在代码中配置你的API Key（OpenAI/兼容接口），\n然后调用 prompts/ 目录下的prompt模板。\n\n参考 prompts/translate.txt';
+}
+</script>
+</body>
+</html>
